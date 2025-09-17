@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-icon{
+    width: 40%;
+    border-radius: 100%;
+}
+
+main{
+    margin: 0 auto;
+    padding: 3rem;
+    /*border: 2px solid red;*/
+}
+
+hr{
+    margin: 1.25rem auto;
+    width: 100%;
+    border: none;
+    height: 2px;
+    background-color: #333;
+    border-top: 1px dashed #999; /* create a dashed line to separate the sections */
+}
+
+
+/* --- HERO SECTION --- */
+.hero-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.hero-section h1{
+    font-size: 1.5rem;
+    margin-top: 0.75rem;
+}
+
+.hero-section p{
+    margin: 1rem 2rem;
+}
+
+
+/* --- PORTFOLIO SECTION --- */
+.portfolio-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.75rem 0;
+    border: 2px solid rosybrown;
+}
+
+.portfolio-section h3{
+    margin-bottom: 1rem;
+}
+
+.project-img{
+    display: block;
+    max-width: 100%;
+    height: auto;   
+}
+
+.profile-desc{
+    background-color: white;
+    color: black;
+    padding: 1.25rem 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    width: 100%;
+}
+
+.profile-desc h4{
+    margin-bottom: 0.5rem;
+}
+
+/* styling the buttons in portfolio section */
+.cta-button{
+    background-color: blue;
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.5rem 1.25rem;
+    margin-top: 1rem;
+    border-radius: 0.25rem;
+}
+
+.cta-button:hover{
+    background-color: darkblue;
+    transform: translateY(-1px);
+}
+
+.cta-button a{
+    text-decoration: none;
+    color: white;
+}
+
+/* --- QUOTE SECTION --- */
+.quote-section{
+    background-color: white;
+    padding: 0.75rem 1.25rem;
+    color: #191919;
+    /*border: 2px solid greenyellow;*/
+    width: 100%;
+    text-align: center;
+    border-radius: 0.25rem;
+}
+
+.quote-container{
+    /*border: 2px solid orangered;*/
+    margin: 0.75rem auto;
+}
+
+/* styles the quote generation button with margins, size and rounded corners */
+#quote-button{
+    margin: 1.25rem;
+    width: 12.5rem;
+    height: 3.125rem;
+    background-color: blue;
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1rem;
+    color: #e5e5e5;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+#output{
+    margin: 1.5rem auto;
+    font-size: 0.95rem;
+    font-family: 'Merriweather';
+}
+
+/* --- SKILL SECTION --- */
+.skill-section{
+    text-align: center;
+    line-height: 1.5;
+    /*border: 2px solid burlywood;*/
+    padding: 1rem;
+}
+
+.skill-section h3{
+    margin-bottom: 1rem;
+}
+
+.skill-section ul{
+    list-style: none;
+    /*border: 10px solid;*/
+}
+
+.skill-section-list{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.skill-section-list li{
+    color: #e5e5e5;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid white;
+    cursor: pointer;
+    font-size: 0.875rem;
+}
+
+.skill-section-list li:hover{
+    background-color: #333;
+    color: #999;
+    opacity: 0.7;
+}
+
+.bx-star{
+    padding-right: 0.5rem;
+}
+
+/* when hovering skills, a message appear */
+.tooltip{
+    display: none;
+    position: absolute;
+    background-color: #333;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    z-index: 1000; /* Ensure it appears above other content */
+    display: flex;
+    align-items: center;
+    margin: 20px auto;
+}
+
+/* --- EDUCATION SECTION --- */
+.education-section{
+    padding: 1rem;
+    line-height: 1.7;
+    text-align: center;
+}
+
+.education-section h3, .education-section p{
+    margin-bottom: 1.5rem;
+}
+
+.education-link{
+    text-decoration: none;
+    color: gray;
+    font-weight: 600;
+}
+
+.education-link:hover{
+    text-decoration: underline;
+}
+
+/* --- Media queries - for responsiveness */
+@media (min-width: 768px){
+    .profile-icon{
+        width: 25%;
+    }
+
+    .portfolio-section{
+        padding: 1rem 0;
+    }
+
+    .project-img{
+        width: 400px;
+        height: auto;
+    }
+
+    .profile-desc{
+        padding: 0.5rem 1.25rem;
+        width: 46%;
+    }
+
+    .quote-section{
+        padding: 0.5rem 1rem;
+        width: 50%;
+    }
+}

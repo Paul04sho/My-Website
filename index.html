@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <!--CSS File-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--Box Icons-->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+</head>
+<body>
+    <main>
+        <div class="hero-section">
+            <img src="images/1751045621062.jpg" class="profile-icon">
+            <h1>Paul-Emmanuel Tchoumé</h1>
+            <h4>Web Developer</h4>
+            <p>I am a web developer from Abidjan in Ivory Coast. After I graduated with
+                a degree in information technology, I have been working on personal projects in
+                order to improve my skills. Here's a portfolio of some of my work. I hope you enjoy it!
+            </p>
+        </div>
+
+        <hr>
+
+        <section class="portfolio-section">
+            <h3>Frontend Projects</h3>
+            <img 
+            src="images/68747470733a2f2f7777772e66726f6e74656e6470726163746963652e636f6d2f66756c6c73697a652f43322d61627374726163742e706e67.png" 
+            class="project-img">
+            <div class="profile-desc">
+                <h4>Abstract Landing Page</h4>
+                <p>Inspired by <b>Abstract | Help Center</b> website. Coded with HTML, CSS and JavaScript.</p>
+                <button class="cta-button"><a href="https://paul04sho.github.io/Frontend-Abstract-Landing-Page/">Take a closer look</a></button>
+            </div>
+
+            <img src="images/C2-pulse.png" class="project-img">
+            <div class="profile-desc">
+                <h4>Pulse Landing Page</h4>
+                <p>Challenge found on Frontend Practice. Added Sign-Up page to register user information. </p>
+                <button class="cta-button"><a href="https://paul04sho.github.io/Pulse-Landing-Page/">Take a closer look</a></button>
+            </div>
+
+            <div class="quote-section">
+                <h1>Quote Generator</h1>
+                <div class="quote-container">
+                    <button id="quote-button">Generate Quote</button>
+                    <div id="output">Quote appears here!</div>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="skill-section">
+            <h3>Skill Summary</h3>
+            <ul class="skill-section-list" data-tooltip="These tags tell you what technologies I use">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>C++</li>
+            </ul>
+
+            <ul class="skill-section-qualification">
+                <li><i class="bx bx-star"></i>Frontend Developer</li>
+                <li><i class="bx bx-star"></i>Graphic designer with Figma</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section class="education-section">
+            <h3>Education</h3>
+            <p>
+                ESMA Abidjan <br>
+                Bachelor of Digital Science
+            </p>
+            <a href="https://esma-edu.net/" class="education-link">Visit ESMA ABIDJAN</a>
+        </section>
+    </main>
+
+    <script defer src="main.js"></script>
+</body>
+</html>
