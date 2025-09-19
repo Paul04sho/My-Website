@@ -50,7 +50,6 @@ Après l’obtention de mon diplôme en informatique, je me suis consacré à de
 ---
 
 ## 📬 Me contacter
-- **Email** :[Pour me contacter](paultchoume905@gmail.com)
 - **LinkedIn** : [Connectons-nous](https://www.linkedin.com)  
 - **GitHub** : [Voir mes autres projets](https://github.com/paul04sho)
 
@@ -59,3 +58,4 @@ Après l’obtention de mon diplôme en informatique, je me suis consacré à de
 ## 🤝 Collaboration
 Je suis ouvert aux opportunités, stages et projets stimulants.  
 Si vous avez une idée ou un besoin en développement web, **contactez-moi et construisons ensemble quelque chose d’extraordinaire** !
+
