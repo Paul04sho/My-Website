@@ -14,6 +14,9 @@
 
     <!--Box Icons-->
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+
+    <!--Font Awesome library-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <main>
@@ -21,37 +24,64 @@
             <img src="images/1751045621062.jpg" class="profile-icon">
             <h1>Paul-Emmanuel Tchoumé</h1>
             <h4>Web Developer</h4>
-            <p>I am a web developer from Abidjan in Ivory Coast. After I graduated with
-                a degree in information technology, I have been working on personal projects in
-                order to improve my skills. Here's a portfolio of some of my work. I hope you enjoy it!
+            <p>
+                Je suis un développeur web d'Abidjan en Côte d'Ivoire. Après avoir obtenu
+                un diplôme en informatique, j'ai travaillé sur des projets personnels
+                afin d'améliorer mes compétences. Voici un portfolio de certains de mes travaux. 
+                J'espère que vous l'apprécierez !
             </p>
         </div>
 
         <hr>
 
         <section class="portfolio-section">
-            <h3>Frontend Projects</h3>
-            <img 
-            src="images/68747470733a2f2f7777772e66726f6e74656e6470726163746963652e636f6d2f66756c6c73697a652f43322d61627374726163742e706e67.png" 
-            class="project-img">
-            <div class="profile-desc">
-                <h4>Abstract Landing Page</h4>
-                <p>Inspired by <b>Abstract | Help Center</b> website. Coded with HTML, CSS and JavaScript.</p>
-                <button class="cta-button"><a href="https://paul04sho.github.io/Frontend-Abstract-Landing-Page/">Take a closer look</a></button>
-            </div>
+            <h3>Projets Frontend</h3>
 
-            <img src="images/C2-pulse.png" class="project-img">
-            <div class="profile-desc">
-                <h4>Pulse Landing Page</h4>
-                <p>Challenge found on Frontend Practice. Added Sign-Up page to register user information. </p>
-                <button class="cta-button"><a href="https://paul04sho.github.io/Pulse-Landing-Page/">Take a closer look</a></button>
+            <div class="projects-container">
+                <!--First project-->
+                <div class="project-card">
+                    <img
+                    src="https://www.frontendpractice.com/fullsize/C2-abstract.png"
+                    class="project-img">
+                    <div class="profile-desc">
+                        <h4>Abstract Landing Page</h4>
+                        <p>
+                            Inspiré par le site web <b>Abstract|Help Center</b>.
+                            Codé avec HTML, CSS et JavaScript avec un design moderne et responsive.
+                        </p>
+                        <button class="cta-button">
+                            <a href="https://paul04sho.github.io/Frontend-Abstract-Landing-Page/">
+                                Voir le projet
+                            </a>
+                        </button>
+                    </div>
+                </div>
+                
+                <!--Second project-->
+                <div class="project-card">
+                    <img 
+                    src="https://www.frontendpractice.com/fullsize/C2-pulse.png" 
+                    class="project-img">
+                    <div class="profile-desc">
+                        <h4>Pulse Landing Page</h4>
+                        <p>
+                            Défi trouvé sur Frontend Practice.
+                            J'ai ajouté une page d'inscription pour enregistrer les informations des utilisateurs.
+                        </p>
+                        <button class="cta-button">
+                            <a href="https://paul04sho.github.io/Pulse-Landing-Page/">
+                                Voir le projet
+                            </a>
+                        </button>
+                    </div>
+                </div>
             </div>
 
             <div class="quote-section">
-                <h1>Quote Generator</h1>
+                <h1>Générateur de citations</h1>
                 <div class="quote-container">
-                    <button id="quote-button">Generate Quote</button>
-                    <div id="output">Quote appears here!</div>
+                    <button id="quote-button">Générer une citation</button>
+                    <div id="output">Cliquez sur le bouton pour découvrir une citation inspirante !</div>
                 </div>
             </div>
         </section>
@@ -59,8 +89,8 @@
         <hr>
 
         <section class="skill-section">
-            <h3>Skill Summary</h3>
-            <ul class="skill-section-list" data-tooltip="These tags tell you what technologies I use">
+            <h3>Résumé des Compétences</h3>
+            <ul class="skill-section-list" data-tooltip="Ces tags indiquent les technologies que j'utilise">
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>JavaScript</li>
@@ -68,23 +98,75 @@
             </ul>
 
             <ul class="skill-section-qualification">
-                <li><i class="bx bx-star"></i>Frontend Developer</li>
-                <li><i class="bx bx-star"></i>Graphic designer with Figma</li>
+                <li><i class="bx bx-star"></i>Développeur Frontend</li>
+                <li><i class="bx bx-star"></i>Designer graphique avec Figma</li>
             </ul>
         </section>
 
         <hr>
 
         <section class="education-section">
-            <h3>Education</h3>
+            <h3>Formation</h3>
             <p>
                 ESMA Abidjan <br>
-                Bachelor of Digital Science
+                Bachelor en Sciences Numériques
             </p>
-            <a href="https://esma-edu.net/" class="education-link">Visit ESMA ABIDJAN</a>
+            <a href="https://esma-edu.net/" class="education-link" target="_blank" rel="noopener">
+                <i class="bx bx-link-external"></i>
+                Visiter ESMA ABIDJAN
+            </a>
+        </section>
+
+        <hr>
+
+        <section class="contact-section">
+            <h3>Contact</h3>
+            <p class="N'hésitez pas à me contacter pour discuter de vos projets"></p>
+            <div class="contact-section-content">
+                <!--Email Card-->
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="bx bx-envelope"></i>
+                    </div>
+                        <div class="contact-method">Email</div>
+                        <div class="contact-info">Discutons de vos projets web</div>
+                        <a href="mailto:paultchoume905@gmail.com?subject=A propos de mes services" class="contact-link">
+                            <i class="bx bx-send"></i>
+                            Envoyer moi un mail
+                        </a>
+                </div>
+                    <!--Linkedin Card-->
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fa fa-linkedin-square"></i>
+                        </div>
+                        <div class="contact-method">Linkedin</div>
+                        <div class="contact-info">Connectons nous professionnellement</div>
+                        <a href="https://www.linkedin.com/in/paultchoume01/" class="contact-link" target="_blank" rel="noopener">
+                            <i class="bx bx-link-external"></i>
+                            Mon profil
+                        </a>
+                    </div>
+                    <!--Github Card-->
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fa fa-github"></i>
+                        </div>
+                        <div class="contact-method">Github</div>
+                        <div class="contact-info">Découvrez mes autres projets</div>
+                        <a href="https://github.com/Paul04sho" class="contact-link" target="_blank" rel="noopener">
+                            <i class="bx bx-code-alt"></i>
+                            Voir mes repos
+                        </a>
+                    </div>
+
+                    <div class="contact-cta">
+                        <h4>Prêt à collaborer ?</h4>
+                        <p>Je suis toujours ouvert aux nouvelles opportunités et aux projets passionnants. Contactez-moi et construisons quelque chose d'extraordinaire ensemble !</p>
+                    </div>
+            </div>
         </section>
     </main>
-
     <script defer src="main.js"></script>
 </body>
 </html>
