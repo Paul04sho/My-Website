@@ -527,7 +527,7 @@ hr{
 }
 
 /* --- Media queries - for responsiveness */
-@media(min-width: 768px){
+@media(max-width: 768px){
     main{
         padding: 1rem;
     }
@@ -658,3 +658,4 @@ hr{
 .education-section {
     animation: fadeInUp 0.6s ease forwards;
 }
+
